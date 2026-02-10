@@ -12,7 +12,7 @@ class RAGEngine:
     def __init__(self):
         print("Initializing RAGEngine...")
         try:
-            self.embeddings = GoogleGenerativeAIEmbeddings(model="models/embedding-001")
+            self.embeddings = GoogleGenerativeAIEmbeddings(model="models/text-embedding-004")
             print("Embeddings loaded.")
             self.llm = ChatGoogleGenerativeAI(model="gemini-1.5-flash", temperature=0)
             print("LLM loaded.")
